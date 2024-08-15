@@ -5,9 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Random Quote Machine</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="machine-learning.png" type="image/png">
+        <link rel="icon" href="quotation.png" type="image/png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+
     </head>
     <body>
+        <div id="big-container">
+            <div id="quote-box">
+                <div id="quote-text">
+                    <span id="text"></span>
+                </div>
+                <div id="author"></div>
+                <div class="buttons">
+                    <a class="button" title="post this quote on Facebook!" target="_blank" href=""><i class="fa fa-facebook"></i></a>
+                    <a class="button" title="post this quote on Instagram!" target="_blank" href=""><i class="fa fa-instagram" href=""></i></a>
+                    <button class="quote-button">New quote</button>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--includes core jQuery library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script> <!--includes the jQuery UI library which is built on top of jQuery, adds interactive widgets like sliders,... drag and drop, resizable elements, sortable lists-->
 
+        <script src="script.js"></script>
     </body>
 </html>
