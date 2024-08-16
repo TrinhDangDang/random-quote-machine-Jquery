@@ -53,10 +53,10 @@ const getQuote = () => {
     const quote = quoteAndAuthor.quote;
     const author = quoteAndAuthor.author;
 
+    $('#text').text(quoteAndAuthor.quote).hide().fadeIn(700);
 
-    $("#text").text(quoteAndAuthor.quote)
 
-    $("#author").text(quoteAndAuthor.author)
+    $("#author").text(quoteAndAuthor.author).hide().fadeIn(1000);
     
     
     function ran() {
@@ -68,6 +68,8 @@ const getQuote = () => {
     document.body.style.setProperty('--color2', randomColors[1]);
     document.body.style.setProperty('--color3', randomColors[2]);
     document.body.classList.add('animated-background');
+
+
 }
 
 $(document).ready(function () {
