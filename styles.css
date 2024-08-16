@@ -1,0 +1,60 @@
+
+*{
+    box-sizing: border-box;
+}
+.animated-background {
+    background: linear-gradient(135deg, var(--color1), var(--color2), var(--color3));
+    background-size: 200% 200%;
+    animation: bg-animation 4s ease-in-out infinite alternate;
+}
+
+
+  
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#quote-box {
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 23px;
+    font-family: "Sedan", serif;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#author {
+    margin-top: 10px;
+}
+
+#quoteBtn {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#quoteBtn:hover{
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes bg-animation {
+    0% {
+      background-position: 0% 0%;
+    }
+    
+    100%{
+        background-position: 100% 100%;
+    }
+  }
+  
