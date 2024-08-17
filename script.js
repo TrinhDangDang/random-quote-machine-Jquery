@@ -63,6 +63,8 @@ const getQuote = () => {
         $(this).animate({opacity: 1}, 600);
         $("#author").text(quoteAndAuthor.author);
     })
+
+    
     
     
     function ran() {
