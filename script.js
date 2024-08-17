@@ -53,10 +53,16 @@ const getQuote = () => {
     const quote = quoteAndAuthor.quote;
     const author = quoteAndAuthor.author;
 
-    $('#text').text(quoteAndAuthor.quote).hide().fadeIn(700);
-
-
-    $("#author").text(quoteAndAuthor.author).hide().fadeIn(1000);
+    $('#quote-text').animate({ opacity: 0 }, 500, function () {
+        // Fade-out animation over 500 milliseconds
+        $(this).animate({ opacity: 1 }, 500); // Fade-in animation over 500 milliseconds
+        $('#text').text(quoteAndAuthor.quote); // Update the text after the fade-out completes
+        
+    });
+    $("#author").animate({opacity: 0}, 500, function(){
+        $(this).animate({opacity: 1}, 600);
+        $("#author").text(quoteAndAuthor.author);
+    })
     
     
     function ran() {
@@ -68,6 +74,7 @@ const getQuote = () => {
     document.body.style.setProperty('--color2', randomColors[1]);
     document.body.style.setProperty('--color3', randomColors[2]);
     document.body.classList.add('animated-background');
+    $("quoteBtn").hide().fadeIn(1000);
 
 
 }

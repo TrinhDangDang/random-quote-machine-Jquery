@@ -40,6 +40,8 @@ body {
 #quoteBtn {
     margin-top: 20px;
     font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    margin-top: 300px;;
 }
 
 #quoteBtn:hover{
